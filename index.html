@@ -4,6 +4,15 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 		<title>Crypto Real Time</title>
+		<style>
+			.green {
+				color: #8bc040;
+			}
+
+			.red {
+				color: #de5f66;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -12,10 +21,9 @@
 					<table class="table table-bordered" id="real_time">
 						<thead>
 							<tr>
-								<th>id</th>
+								<th>rank</th>
 								<th>name</th>
 								<th>symbol</th>
-								<th>rank</th>
 								<th>price USD</th>
 								<th>1H</th>
 								<th>24H</th>
@@ -25,10 +33,9 @@
 						</thead>
 						<tbody>
 							<tr v-for="currency in currencies">
-								<td>{{ currency.id }}</td>
+								<td>{{ currency.rank }}</td>
 								<td>{{ currency.name }}</td>
 								<td>{{ currency.symbol }}</td>
-								<td>{{ currency.rank }}</td>
 								<td>{{ currency.price_usd }}</td>
 								<td>{{ currency.percent_change_1h }}</td>
 								<td>{{ currency.percent_change_24h }}</td>
