@@ -1,0 +1,19 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #5F2b63;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+table thead {
+	font-size: 0.9rem;
+	background: #4d3050;
+}
+
+.green {
+	color: #8bc040;
+}
+
+.red {
+	color: #de5f66;
+}
