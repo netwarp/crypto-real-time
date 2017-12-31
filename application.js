@@ -12,9 +12,8 @@ var real_time_refresher = new Vue({
 	methods: {
 		refresher() {
 			var url = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'
-
-			setInterval(() => {
-				fetch(url)
+			
+			fetch(url)
 				.then((response) => {
 					return response.json();
 				})
@@ -22,7 +21,6 @@ var real_time_refresher = new Vue({
 					this.currencies = data
 					console.log(data)
 				})
-			}, 180000)
 		}
 	}
 })
