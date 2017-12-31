@@ -28,7 +28,6 @@
 								<th>1H</th>
 								<th>24H</th>
 								<th>7D</th>
-								<th>last update</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -40,7 +39,6 @@
 								<td :class="Math.sign(currency.percent_change_1h) == 1 ? 'green' : 'red'"> {{ currency.percent_change_1h }}</td>
 								<td :class="Math.sign(currency.percent_change_24h) == 1 ? 'green' : 'red'"> {{ currency.percent_change_24h }}</td>
 								<td :class="Math.sign(currency.percent_change_7d) == 1 ? 'green' : 'red'"> {{ currency.percent_change_7d }}</td>
-								<td>{{ currency.last_updated }}</td>
 							</tr>
 						</tbody>
 					</table>
