@@ -6,7 +6,7 @@ var real_time_refresher = new Vue({
 
 		setInterval(() => {
 			this.loadData()
-		}, 7000)
+		}, 10000)
 	},
 
 	data: {
@@ -15,7 +15,7 @@ var real_time_refresher = new Vue({
 
 	methods: {
 		loadData() {
-			var url = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'
+			var url = 'https://api.coinmarketcap.com/v1/ticker/?limit=30'
 			console.log('ok')
 
 			fetch(url)
