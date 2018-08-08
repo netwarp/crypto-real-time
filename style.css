@@ -1,19 +1,28 @@
+:root {
+	--dark: #1b1c20;
+	--darker: #17181b;
+
+	--green: #8bc040;
+	--red: #de5f66;
+}
+
 body {
-	font-family: 'Montserrat', sans-serif;
-	background: #5F2b63;
+	font-family: sans-serif;
+	background: var(--dark);
 	color: #fff;
 	font-size: 1.4rem;
 }
 
 table thead {
 	font-size: 0.9rem;
-	background: #4d3050;
+	background: var(--darker);
+	text-transform: uppercase;
 }
 
 .green {
-	color: #8bc040;
+	color: var(--green);
 }
 
 .red {
-	color: #de5f66;
+	color: var(--red);
 }

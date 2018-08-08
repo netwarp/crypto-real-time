@@ -6,7 +6,7 @@ var real_time_refresher = new Vue({
 
 		setInterval(() => {
 			this.loadData()
-		}, 10000)
+		}, 100000)
 	},
 
 	data: {
